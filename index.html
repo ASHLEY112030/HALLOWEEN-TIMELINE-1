@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Evolution Timeline</title>
+
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1a36 100%);
+            color: #fff;
+        }
+        #timeline-embed {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        .timeline-title {
+            background: rgba(0,0,0,0.8);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #ff6b08;
+        }
+        .halloween-theme {
+            background-color: #1a1a1a !important;
+        }
+        .image-placeholder {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border: 2px dashed #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="timeline-embed"></div>
+
+    <script>
+        const timelineData = {
+            "title": {
+                "text": {
+                    "headline": "🎃 From Samhain to Halloween: An Evolutionary Timeline",
+                    "text": "<p>This timeline charts the fascinating transformation of an ancient Celtic festival into the multi-billion dollar global phenomenon of modern Halloween.</p>"
+                },
+                "background": {
+                    "color": "#000000"
+                }
+            },
+            "eras": [
+                {
+                    "start_date": {
+                        "year": "1"
+                    },
+                    "end_date": {
+                        "year": "700"
+                    },
+                    "text": {
+                        "headline": "Ancient Celtic Roots (c. 2,000 years ago)",
+                        "text": "The foundation of Samhain traditions"
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "601"
+                    },
+                    "end_date": {
+                        "year": "1100"
+                    },
+                    "text": {
+                        "headline": "Christian Influence",
+                        "text": "Transformation into All Hallows' Eve"
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "1500"
+                    },
+                    "end_date": {
+                        "year": "1800"
+                    },
+                    "text": {
+                        "headline": "Early Modern Period",
+                        "text": "Traditions develop in Britain and Ireland"
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "1800"
+                    },
+                    "end_date": {
+                        "year": "1900"
+                    },
+                    "text": {
+                        "headline": "American Immigration",
+                        "text": "Irish and Scottish bring traditions"
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "1900"
+                    },
+                    "end_date": {
+                        "year": "1950"
+                    },
+                    "text": {
+                        "headline": "Early 20th Century",
+                        "text": "Commercialization begins"
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "1950"
+                    },
+                    "end_date": {
+                        "year": "2024"
+                    },
+                    "text": {
+                        "headline": "Modern Halloween",
+                        "text": "Global commercial phenomenon"
+                    }
+                }
+            ],
+            "events": [
+                {
+                    "media": {
+                        "url": "The Midsummer Bonfires.jpg",
+                        "caption": "Samhain bonfires were central to the festival, meant to hold back the darkness of winter and ward off spirits.",
+                        "credit": "The Midsummer Bonfires"
+                    },
+                    "start_date": {
+                        "year": "1"
+                    },
+                    "text": {
+                        "headline": "Ancient Celtic Festival of Samhain",
+                        "text": "<p>Celebrated over 2,000 years ago, Samhain (pronounced 'sow-win') marked the end of the harvest and the beginning of the 'darker half' of the year. The Celts believed the veil between the worlds of the living and the dead was thinnest at this time, allowing spirits to pass through.</p><p>Traditions included lighting communal bonfires, wearing costumes made of animal hides to ward off ghosts, and making offerings of food and drink to appease spirits. It was a time for gatherings, feasts, and divination.</p>"
+                    },
+                    "background": {
+                        "color": "#8B4513"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "All Saints' Day.jpg",
+                        "caption": "All Saints' Day and All Souls' Day were incorporated into the church calendar around Samhain.",
+                        "credit": "All Saints' Day"
+                    },
+                    "start_date": {
+                        "year": "837"
+                    },
+                    "text": {
+                        "headline": "Christian Influence: All Hallows' Tide",
+                        "text": "<p>As Christianity spread into Celtic lands, the Church sought to reframe pagan festivals. In the 9th century, the Church established <b>All Saints' Day (All Hallows' Day)</b> on November 1st.</p><p>The night before, October 31, became known as <b>All Hallows' Eve</b>, the direct linguistic predecessor of 'Halloween.' November 2nd was later designated as All Souls' Day. These Christian holidays incorporated and influenced, and were influenced by, the existing Samhain traditions of honoring the dead.</p>"
+                    },
+                    "background": {
+                        "color": "#4B0082"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "Pumpkin Lantern.jpg",
+                        "caption": "Irish immigrants brought traditions like carving turnips (a precursor to the pumpkin jack-o'-lantern) to North America.",
+                        "credit": "Pumpkin Lantern"
+                    },
+                    "start_date": {
+                        "year": "1840"
+                    },
+                    "text": {
+                        "headline": "Immigration to North America",
+                        "text": "<p>Fleeing the Great Famine in the 1840s, waves of Irish and Scottish immigrants brought their Halloween traditions to North America.</p><p>Customs like <b>guising</b> (dressing in costume), carving jack-o'-lanterns (originally from turnips), and playful divination games were introduced. It was on American soil that these old-world customs began to merge and evolve into a more community-centered, public celebration.</p>"
+                    },
+                    "background": {
+                        "color": "#2F4F4F"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "Halloween Candy.jpg",
+                        "caption": "Trick-or-treating became a widespread practice in the US in the early to mid-20th century.",
+                        "credit": "Halloween Candy"
+                    },
+                    "start_date": {
+                        "year": "1930"
+                    },
+                    "text": {
+                        "headline": "The Rise of Trick-or-Treating & Community Control",
+                        "text": "<p>In the early 20th century, Halloween in America was marked by mischief and sometimes destructive pranks. To curb vandalism, communities began to organize <b>house-to-house parties, parades, and other structured events</b>.</p><p>This effort, combined with the widespread adoption of <b>'trick-or-treating'</b> (a practice with roots in 'souling' and 'guising'), successfully channeled the holiday's energy. The term 'trick-or-treat' first appeared in print in the 1920s, and the practice was popularized nationally in part by radio and television shows in the 1940s and 1950s.</p>"
+                    },
+                    "background": {
+                        "color": "#8B0000"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "Halloween Party.jpg",
+                        "caption": "Candy companies saw an opportunity and launched marketing campaigns to make sweets the default Halloween treat.",
+                        "credit": "Halloween Party"
+                    },
+                    "start_date": {
+                        "year": "1950"
+                    },
+                    "text": {
+                        "headline": "Post-WWII Commercialization",
+                        "text": "<p>The post-war baby boom and growth of suburbs created the perfect environment for Halloween to flourish as a family-friendly holiday. <b>Candy companies</b> saw a massive opportunity and began marketing inexpensive, individually wrapped sweets as the perfect and safe treat for trick-or-treaters.</p><p>This era also saw the rise of <b>mass-produced costumes</b>, moving away from solely homemade disguises to outfits featuring popular cartoon, film, and television characters.</p>"
+                    },
+                    "background": {
+                        "color": "#FF4500"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "Horror Movie.jpg",
+                        "caption": "Hollywood horror movies, like John Carpenter's 'Halloween', helped define a visual language for the holiday and expanded its appeal to adults.",
+                        "credit": "Horror Movie"
+                    },
+                    "start_date": {
+                        "year": "1970"
+                    },
+                    "text": {
+                        "headline": "Hollywood and Global Export",
+                        "text": "<p><b>Hollywood sealed Halloween's modern identity.</b> The release of iconic horror films like <i>John Carpenter's 'Halloween'</i> (1978) and <i>'A Nightmare on Elm Street'</i> not only scared audiences but also broadcast a specific, commercial visual language for the holiday worldwide.</p><p>These films, along with TV specials and sitcom episodes, helped transform Halloween from a children's holiday into a major event for adults as well. Through American media and marketing, Halloween was exported globally, completing its journey from an ancient Celtic festival to a worldwide, multi-billion dollar phenomenon.</p>"
+                    },
+                    "background": {
+                        "color": "#FF0000"
+                    }
+                }
+            ]
+        };
+
+        // Initialize Timeline
+        document.addEventListener('DOMContentLoaded', function() {
+            window.timeline = new TL.Timeline('timeline-embed', timelineData, {
+                scale_factor: 1,
+                timenav_height_percentage: 25,
+                optimal_tick_width: 50,
+                base_class: 'halloween-theme',
+                language: "en"
+            });
+        });
+    </script>
+</body>
+</html>
